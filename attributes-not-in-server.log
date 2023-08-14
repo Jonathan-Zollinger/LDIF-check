@@ -1,0 +1,7 @@
+attributeTypes:
+	baegreenlnkmail-oid
+	NAME: 'baeGreenlnkMail'
+	SYNTAX: 1.3.6.1.4.1.1466.115.121.1.15
+	SINGLE-VALUE: X-NDS_NAME
+	'baeGreenlnkMail': X-NDS_NOT_SCHED_SYNC_IMMEDIATE
+	'1': X-NDS_STRINGED

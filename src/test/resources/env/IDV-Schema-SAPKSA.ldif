@@ -1,0 +1,390 @@
+version: 1
+
+#NDS attribute:baeSAPKSAEmployeeTypeCode
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baesapksaemployeetypecode-oid
+  NAME 'baeSAPKSAEmployeeTypeCode'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-NDS_NAME 'baeSAPKSAEmployeeTypeCode'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeSAPKSAphysicalDelOfficeName
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baesapksaphysicaldelofficename-oid
+  NAME 'baeSAPKSAphysicalDelOfficeName'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-NDS_NAME 'baeSAPKSAphysicalDelOfficeName'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeSAPKSAClockNumber
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baesapksaclocknumber-oid
+  NAME 'baeSAPKSAClockNumber'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-NDS_NAME 'baeSAPKSAClockNumber'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeSAPKSAJobTitle
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baesapksajobtitle-oid
+  NAME 'baeSAPKSAJobTitle'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-NDS_NAME 'baeSAPKSAJobTitle'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeSAPKSAFunctionName
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baesapksafunctionname-oid
+  NAME 'baeSAPKSAFunctionName'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-NDS_NAME 'baeSAPKSAFunctionName'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeSAPKSAContractType
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baesapksacontracttype-oid
+  NAME 'baeSAPKSAContractType'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-NDS_NAME 'baeSAPKSAContractType'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeSAPKSALegalEntityName
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baesapksalegalentityname-oid
+  NAME 'baeSAPKSALegalEntityName'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-NDS_NAME 'baeSAPKSALegalEntityName'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeSAPKSAManagerEmail
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baesapksamanageremail-oid
+  NAME 'baeSAPKSAManagerEmail'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-NDS_NAME 'baeSAPKSAManagerEmail'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeSAPKSACompanyStartDate
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baesapksacompanystartdate-oid
+  NAME 'baeSAPKSACompanyStartDate'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-NDS_NAME 'baeSAPKSACompanyStartDate'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeSAPKSABusLevel3Name
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baesapksabuslevel3name-oid
+  NAME 'baeSAPKSABusLevel3Name'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-NDS_NAME 'baeSAPKSABusLevel3Name'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeSAPKSAFunction
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baesapksafunction-oid
+  NAME 'baeSAPKSAFunction'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-NDS_NAME 'baeSAPKSAFunction'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeSAPKSADirectReports
+#Syntax:SYN_DIST_NAME
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baesapksadirectreports-oid
+  NAME 'baeSAPKSADirectReports'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.12
+  X-NDS_NAME 'baeSAPKSADirectReports'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  )
+
+#NDS attribute:baeSAPKSAManager
+#Syntax:SYN_DIST_NAME
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baesapksamanager-oid
+  NAME 'baeSAPKSAManager'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.12
+  X-NDS_NAME 'baeSAPKSAManager'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  )
+
+#NDS attribute:baeSAPKSAIsFullTime
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baesapksaisfulltime-oid
+  NAME 'baeSAPKSAIsFullTime'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-NDS_NAME 'baeSAPKSAIsFullTime'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeSAPKSAContractTypeCode
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baesapksacontracttypecode-oid
+  NAME 'baeSAPKSAContractTypeCode'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-NDS_NAME 'baeSAPKSAContractTypeCode'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeSAPKSALegalEntityCountry
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baesapksalegalentitycountry-oid
+  NAME 'baeSAPKSALegalEntityCountry'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-NDS_NAME 'baeSAPKSALegalEntityCountry'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeSAPKSACostCentre
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baesapksacostcentre-oid
+  NAME 'baeSAPKSACostCentre'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-NDS_NAME 'baeSAPKSACostCentre'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeSAPKSADeptName
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baesapksadeptname-oid
+  NAME 'baeSAPKSADeptName'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-NDS_NAME 'baeSAPKSADeptName'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeSAPKSAGrade
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baesapksagrade-oid
+  NAME 'baeSAPKSAGrade'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-NDS_NAME 'baeSAPKSAGrade'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeSAPKSALastWorkingDay
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baesapksalastworkingday-oid
+  NAME 'baeSAPKSALastWorkingDay'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-NDS_NAME 'baeSAPKSALastWorkingDay'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeSAPKSABusLevel1Code
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baesapksabuslevel1code-oid
+  NAME 'baeSAPKSABusLevel1Code'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-NDS_NAME 'baeSAPKSABusLevel1Code'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeSAPKSAEmployeeType
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baesapksaemployeetype-oid
+  NAME 'baeSAPKSAEmployeeType'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-NDS_NAME 'baeSAPKSAEmployeeType'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeSAPKSABusLevel2Code
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baesapksabuslevel2code-oid
+  NAME 'baeSAPKSABusLevel2Code'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-NDS_NAME 'baeSAPKSABusLevel2Code'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeSAPKSAManagerFuseID
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baesapksamanagerfuseid-oid
+  NAME 'baeSAPKSAManagerFuseID'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-NDS_NAME 'baeSAPKSAManagerFuseID'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeSAPKSAEmploymentGrade
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baesapksaemploymentgrade-oid
+  NAME 'baeSAPKSAEmploymentGrade'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-NDS_NAME 'baeSAPKSAEmploymentGrade'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeSAPKSAManagerWorkforceID
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baesapksamanagerworkforceid-oid
+  NAME 'baeSAPKSAManagerWorkforceID'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-NDS_NAME 'baeSAPKSAManagerWorkforceID'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS class:baeSAPKSA
+dn: cn=schema
+changetype: modify
+#If replacing the object class, uncomment the lines below.
+#delete: objectClasses
+#objectClasses: (
+#  baesapksa-oid
+#  NAME 'baeSAPKSA'
+# )
+#-
+add: objectClasses
+objectClasses: (
+  baesapksa-oid
+  NAME 'baeSAPKSA'
+  AUXILIARY
+  MAY ( baeSAPKSABusLevel1Code $ baeSAPKSABusLevel2Code $ baeSAPKSABusLevel3Name $ baeSAPKSAClockNumber $ 
+   baeSAPKSACompanyStartDate $ baeSAPKSAContractType $ baeSAPKSAContractTypeCode $ baeSAPKSACostCentre $ 
+   baeSAPKSADeptName $ baeSAPKSADirectReports $ baeSAPKSAEmployeeType $ baeSAPKSAEmployeeTypeCode $ 
+   baeSAPKSAEmploymentGrade $ baeSAPKSAFunction $ baeSAPKSAFunctionName $ baeSAPKSAGrade $ baeSAPKSAIsFullTime $ 
+   baeSAPKSAJobTitle $ baeSAPKSALastWorkingDay $ baeSAPKSALegalEntityCountry $ baeSAPKSALegalEntityName $ 
+   baeSAPKSAManager $ baeSAPKSAManagerEmail $ baeSAPKSAManagerFuseID $ baeSAPKSAManagerWorkforceID $ 
+   baeSAPKSAphysicalDelOfficeName )
+  X-NDS_NOT_CONTAINER '1'
+  X-NDS_NAME 'baeSAPKSA'
+  )
+

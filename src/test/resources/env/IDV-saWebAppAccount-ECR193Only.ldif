@@ -1,0 +1,12 @@
+#This was also added to IDV-saWebAppAccount.ldif, so this file can be deleted after this release.
+
+#Grant rights for the WebApp to use the ou=Lists,o=BAES
+dn: ou=Lists,o=BAES
+changetype: modify
+add: ACL
+ACL: 15#subtree#cn=saWebApp,o=servIces#[Entry Rights]
+
+dn: ou=Lists,o=BAES
+changetype: modify
+add: ACL
+ACL: 7#subtree#cn=saWebApp,o=servIces#[All Attributes Rights]

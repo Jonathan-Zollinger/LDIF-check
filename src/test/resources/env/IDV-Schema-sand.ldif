@@ -1,0 +1,293 @@
+version: 1
+
+#NDS attribute:baeSandlnkLoginDisabled
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baesandlnklogindisabled-oid
+  NAME 'baeSandlnkLoginDisabled'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-NDS_NAME 'baeSandlnkLoginDisabled'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeSandlnkst
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baesandlnkst-oid
+  NAME 'baeSandlnkst'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-NDS_NAME 'baeSandlnkst'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeSandlnkDisplayName
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baesandlnkdisplayname-oid
+  NAME 'baeSandlnkDisplayName'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-NDS_NAME 'baeSandlnkDisplayName'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeSandlnkl
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baesandlnkl-oid
+  NAME 'baeSandlnkl'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-NDS_NAME 'baeSandlnkl'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeSandlnkDirXML-ADContext
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baesandlnkdirxml-adcontext-oid
+  NAME 'baeSandlnkDirXML-ADContext'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-NDS_NAME 'baeSandlnkDirXML-ADContext'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeSandlnkMobile
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baesandlnkmobile-oid
+  NAME 'baeSandlnkMobile'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-NDS_NAME 'baeSandlnkMobile'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeSandlnkDomainName
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baesandlnkdomainname-oid
+  NAME 'baeSandlnkDomainName'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-NDS_NAME 'baeSandlnkDomainName'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeSandlnkOutofScope
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baesandlnkoutofscope-oid
+  NAME 'baeSandlnkOutofScope'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-NDS_NAME 'baeSandlnkOutofScope'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeSandlnkUserPrincipalName
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baesandlnkuserprincipalname-oid
+  NAME 'baeSandlnkUserPrincipalName'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-NDS_NAME 'baeSandlnkUserPrincipalName'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeSandlnkTelephoneNumber
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baesandlnktelephonenumber-oid
+  NAME 'baeSandlnkTelephoneNumber'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-NDS_NAME 'baeSandlnkTelephoneNumber'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeSandlnkpostOfficeBox
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baesandlnkpostofficebox-oid
+  NAME 'baeSandlnkpostOfficeBox'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-NDS_NAME 'baeSandlnkpostOfficeBox'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeSandlnkDirXML-ADAliasName
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baesandlnkdirxml-adaliasname-oid
+  NAME 'baeSandlnkDirXML-ADAliasName'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-NDS_NAME 'baeSandlnkDirXML-ADAliasName'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeSandlnkpostcode
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baesandlnkpostcode-oid
+  NAME 'baeSandlnkpostcode'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-NDS_NAME 'baeSandlnkpostcode'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeSandlnkBusinessIPPhoneNumber
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baesandlnkbusinessipphonenumber-oid
+  NAME 'baeSandlnkBusinessIPPhoneNumber'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-NDS_NAME 'baeSandlnkBusinessIPPhoneNumber'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeSandlnkMail
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baesandlnkmail-oid
+  NAME 'baeSandlnkMail'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-NDS_NAME 'baeSandlnkMail'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeSandlnkSAMAccountName
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baesandlnksamaccountname-oid
+  NAME 'baeSandlnkSAMAccountName'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-NDS_NAME 'baeSandlnkSAMAccountName'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeSandlnkSIPAddress
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baesandlnksipaddress-oid
+  NAME 'baeSandlnkSIPAddress'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-NDS_NAME 'baeSandlnkSIPAddress'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeSandlnkProxyAddresses
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baesandlnkproxyaddresses-oid
+  NAME 'baeSandlnkProxyAddresses'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-NDS_NAME 'baeSandlnkProxyAddresses'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeSandlnkAccountExpirationDate
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baesandlnkaccountexpirationdate-oid
+  NAME 'baeSandlnkAccountExpirationDate'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-NDS_NAME 'baeSandlnkAccountExpirationDate'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )  
+
+
+#NDS class:baeSandlnk
+dn: cn=schema
+changetype: modify
+#If replacing the object class, uncomment the lines below.
+delete: objectClasses
+objectClasses: (
+  baesandlnk-oid
+  NAME 'baeSandlnk'
+ )
+-
+add: objectClasses
+objectClasses: (
+  baesandlnk-oid
+  NAME 'baeSandlnk'
+  AUXILIARY
+  MAY ( baeSandlnkAccountExpirationDate $ baeSandlnkBusinessIPPhoneNumber $ baeSandlnkDirXML-ADAliasName $ 
+   baeSandlnkDirXML-ADContext $ baeSandlnkDisplayName $ baeSandlnkDomainName $ baeSandlnkl $ baeSandlnkLoginDisabled $ 
+   baeSandlnkMail $ baeSandlnkMobile $ baeSandlnkOutofScope $ baeSandlnkpostcode $ baeSandlnkpostOfficeBox $ 
+   baeSandlnkProxyAddresses $ baeSandlnkSAMAccountName $ baeSandlnkSIPAddress $ baeSandlnkst $ 
+   baeSandlnkTelephoneNumber $ baeSandlnkUserPrincipalName )
+  X-NDS_NOT_CONTAINER '1'
+  X-NDS_NAME 'baeSandlnk'
+  )
+

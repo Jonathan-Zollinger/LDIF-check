@@ -1,0 +1,13 @@
+version: 1
+
+dn: ou=Accounts,dc=Greenlnk,dc=trivir,dc=com
+changetype: add
+objectClass: organizationalUnit
+
+dn: ou=Business Groups,dc=Greenlnk,dc=trivir,dc=com
+changetype: add
+objectClass: organizationalUnit
+
+dn: ou=BusinessUnitX,ou=Business Groups,dc=Greenlnk,dc=trivir,dc=com
+changetype: add
+objectClass: organizationalUnit

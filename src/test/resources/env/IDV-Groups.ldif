@@ -1,0 +1,46 @@
+version: 1
+
+#Note: all groups are created dynamically now. This file has been left for possible future use of some static groups that have not yet been identified.
+
+dn: cn=DAC,ou=Groups,o=BAES
+objectClass: Top
+objectClass: groupOfNames
+cn: DAC
+description: Group that identifies DAC Users.
+
+dn: cn=EC,ou=Groups,o=BAES
+objectClass: Top
+objectClass: groupOfNames
+cn: EC
+description: Group that identifies EC Officer Users.
+
+dn: cn=NSFAdmin,ou=Groups,o=BAES
+objectClass: Top
+objectClass: groupOfNames
+cn: NSFAdmin
+description: Group that identifies NSF Person Admin Users.
+
+dn: cn=AA,ou=Groups,o=BAES
+objectClass: Top
+objectClass: groupOfNames
+cn: AA
+description: Group that identifies Authorisation Administrator Users.
+
+dn: cn=GEC,ou=Groups,o=BAES
+objectClass: Top
+objectClass: groupOfNames
+cn: GEC
+description: Group that identifies GEC Users.
+
+dn: cn=AMA,ou=Groups,o=BAES
+objectClass: Top
+objectClass: groupOfNames
+cn: AMA
+description: Group that identifies AMA Users.
+
+dn: cn=RO,ou=Groups,o=BAES
+objectClass: Top
+objectClass: groupOfNames
+cn: RO
+description: Group that identifies Read Only Users.
+

@@ -1,0 +1,2332 @@
+version: 1
+
+#NDS class:baeLicence
+dn: cn=schema
+changetype: modify
+delete: objectClasses
+objectClasses: (
+  baelicence-oid
+  NAME 'baeLicence'
+  STRUCTURAL
+ )
+
+#NDS class:baePerson
+dn: cn=schema
+changetype: modify
+delete: objectClasses
+objectClasses: (
+  baeperson-oid
+  NAME 'baePerson'
+  AUXILIARY
+ )
+
+#NDS class:baeWebAppNotification
+dn: cn=schema
+changetype: modify
+delete: objectClasses
+objectClasses: (
+  baewebappnotification-oid
+  NAME 'baeWebAppNotification'
+ )
+
+#NDS class:baeWebAppDelObjectNotification
+dn: cn=schema
+changetype: modify
+delete: objectClasses
+objectClasses: (
+  baewebappdelobjectnotification-oid
+  NAME 'baeWebAppDelObjectNotification'
+ )
+
+#NDS attribute:baeAdminAccountReferences
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baeadminaccountreferences-oid
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeAdminAccountReferences'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeApplicableAssets
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baeapplicableassets-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeApplicableAssets'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeAttributeChangeInfo
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baeattributechangeinfo-oid
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeAttributeChangeInfo'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeAuthRefNumber
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baeauthrefnumber-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeAuthRefNumber'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeAuthType
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baeauthtype-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeAuthType'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeBirthCity
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baebirthcity-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeBirthCity'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeBirthCountry
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baebirthcountry-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeBirthCountry'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeBusLevel1Code
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baebuslevel1code-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeBusLevel1Code'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeBusLevel1CodePri
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baebuslevel1codepri-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeBusLevel1CodePri'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeBusLevel1CodeSec
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baebuslevel1codesec-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeBusLevel1CodeSec'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeBusLevel1Name
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baebuslevel1name-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeBusLevel1Name'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeBusLevel1NamePri
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baebuslevel1namepri-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeBusLevel1NamePri'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeBusLevel1NameSec
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baebuslevel1namesec-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeBusLevel1NameSec'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeBusLevel2Code
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baebuslevel2code-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeBusLevel2Code'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeBusLevel2CodePri
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baebuslevel2codepri-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeBusLevel2CodePri'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeBusLevel2CodeSec
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baebuslevel2codesec-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeBusLevel2CodeSec'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeBusLevel2Name
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baebuslevel2name-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeBusLevel2Name'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeBusLevel2NamePri
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baebuslevel2namepri-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeBusLevel2NamePri'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeBusLevel2NameSec
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baebuslevel2namesec-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeBusLevel2NameSec'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeBusLevel3Code
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baebuslevel3code-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeBusLevel3Code'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeBusLevel3CodePri
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baebuslevel3codepri-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeBusLevel3CodePri'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeBusLevel3CodeSec
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baebuslevel3codesec-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeBusLevel3CodeSec'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeBusLevel3Name
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baebuslevel3name-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeBusLevel3Name'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeBusLevel3NamePri
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baebuslevel3namepri-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeBusLevel3NamePri'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeBusLevel3NameSec
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baebuslevel3namesec-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeBusLevel3NameSec'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeBusLevel3Sec
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baebuslevel3sec-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeBusLevel3Sec'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeBusinessIPPhoneNumber
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baebusinessipphonenumber-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeBusinessIPPhoneNumber'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeClassification
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baeclassification-oid
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeClassification'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeCompanyEndDate
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baecompanyenddate-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeCompanyEndDate'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeCompanyStartDate
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baecompanystartdate-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeCompanyStartDate'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeContractLength
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baecontractlength-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeContractLength'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeContractType
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baecontracttype-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeContractType'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeDeletedObjectDN
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baedeletedobjectdn-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeDeletedObjectDN'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+ 
+#NDS attribute:baeDOB
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baedob-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeDOB'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeDeptCode
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baedeptcode-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeDeptCode'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeDeptCodePri
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baedeptcodepri-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeDeptCodePri'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeDeptCodeSec
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baedeptcodesec-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeDeptCodeSec'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeDeptLevel1Code
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baedeptlevel1code-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeDeptLevel1Code'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeDeptLevel1CodePri
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baedeptlevel1codepri-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeDeptLevel1CodePri'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeDeptLevel1CodeSec
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baedeptlevel1codesec-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeDeptLevel1CodeSec'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeDeptLevel1Description
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baedeptlevel1description-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeDeptLevel1Description'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeDeptLevel1DescriptionPri
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baedeptlevel1descriptionpri-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeDeptLevel1DescriptionPri'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeDeptLevel1DescriptionSec
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baedeptlevel1descriptionsec-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeDeptLevel1DescriptionSec'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeDeptLevel2Code
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baedeptlevel2code-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeDeptLevel2Code'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeDeptLevel2CodePri
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baedeptlevel2codepri-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeDeptLevel2CodePri'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeDeptLevel2CodeSec
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baedeptlevel2codesec-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeDeptLevel2CodeSec'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeDeptLevel2Description
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baedeptlevel2description-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeDeptLevel2Description'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeDeptLevel2DescriptionPri
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baedeptlevel2descriptionpri-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeDeptLevel2DescriptionPri'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeDeptLevel2DescriptionSec
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baedeptlevel2descriptionsec-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeDeptLevel2DescriptionSec'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeDeptLevel3Code
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baedeptlevel3code-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeDeptLevel3Code'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeDeptLevel3CodePri
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baedeptlevel3codepri-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeDeptLevel3CodePri'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeDeptLevel3CodeSec
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baedeptlevel3codesec-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeDeptLevel3CodeSec'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeDeptLevel3Description
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baedeptlevel3description-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeDeptLevel3Description'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeDeptLevel3DescriptionPri
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baedeptlevel3descriptionpri-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeDeptLevel3DescriptionPri'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeDeptLevel3DescriptionSec
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baedeptlevel3descriptionsec-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeDeptLevel3DescriptionSec'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeDeptName
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baedeptname-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeDeptName'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeDeptNamePri
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baedeptnamepri-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeDeptNamePri'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeDeptNameSec
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baedeptnamesec-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeDeptNameSec'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeDirectionAndControl
+#Syntax:SYN_BOOLEAN
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baedirectionandcontrol-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.7
+  NAME 'baeDirectionAndControl'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeEligibility
+#Syntax:SYN_BOOLEAN
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baeeligibility-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.7
+  NAME 'baeEligibility'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeEndDateSec
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baeenddatesec-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeEndDateSec'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeEnterpriseCode
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baeenterprisecode-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeEnterpriseCode'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeEnterpriseCodePri
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baeenterprisecodepri-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeEnterpriseCodePri'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeEnterpriseCodeSec
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baeenterprisecodesec-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeEnterpriseCodeSec'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeEnterpriseName
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baeenterprisename-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeEnterpriseName'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeEnterpriseNamePri
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baeenterprisenamepri-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeEnterpriseNamePri'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeEnterpriseNameSec
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baeenterprisenamesec-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeEnterpriseNameSec'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeFullTimeExclusive
+#Syntax:SYN_BOOLEAN
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baefulltimeexclusive-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.7
+  NAME 'baeFullTimeExclusive'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeFunctionCode
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baefunctioncode-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeFunctionCode'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeFunctionName
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baefunctionname-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeFunctionName'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeGCINumber
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baegcinumber-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeGCINumber'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeGLAccountExpirationDate
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baeglaccountexpirationdate-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeGLAccountExpirationDate'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeGLWriteBackDisabled
+#Syntax:SYN_BOOLEAN
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baeglwritebackdisabled-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.7
+  NAME 'baeGLWriteBackDisabled'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeGreenlnkAdminUserID
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baegreenlnkadminuserid-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeGreenlnkAdminUserID'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeGreenlnkDisplayName
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baegreenlnkdisplayname-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeGreenlnkDisplayName'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeGreenlnkMail
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baegreenlnkmail-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeGreenlnkMail'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeGreenlnkSAMAccountName
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baegreenlnksamaccountname-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeGreenlnkSAMAccountName'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeGreenlnkUserPrincipalName
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baegreenlnkuserprincipalname-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeGreenlnkUserPrincipalName'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeGroupCode
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baegroupcode-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeGroupCode'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeGroupCodePri
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baegroupcodepri-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeGroupCodePri'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeGroupCodeSec
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baegroupcodesec-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeGroupCodeSec'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeGroupName
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baegroupname-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeGroupName'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeGroupNamePri
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baegroupnamepri-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeGroupNamePri'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeGroupNameSec
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baegroupnamesec-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeGroupNameSec'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeHasOutstandingProvisos
+#Syntax:SYN_BOOLEAN
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baehasoutstandingprovisos-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.7
+  NAME 'baeHasOutstandingProvisos'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeHomeDomain
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baehomedomain-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeHomeDomain'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeIDVCreateDate
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baeidvcreatedate-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeIDVCreateDate'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeITARNDA
+#Syntax:SYN_BOOLEAN
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baeitarnda-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.7
+  NAME 'baeITARNDA'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeIsDirectEmployee
+#Syntax:SYN_BOOLEAN
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baeisdirectemployee-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.7
+  NAME 'baeIsDirectEmployee'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeIsUserComplete
+#Syntax:SYN_BOOLEAN
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baeisusercomplete-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.7
+  NAME 'baeIsUserComplete'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeIssuingBody
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baeissuingbody-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeIssuingBody'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeJobTitle
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baejobtitle-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeJobTitle'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeJurisdiction
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baejurisdiction-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeJurisdiction'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeLastWorkingDay
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baelastworkingday-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeLastWorkingDay'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeLegacyPayRollNumber
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baelegacypayrollnumber-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeLegacyPayRollNumber'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeLegalEntityAgainstITARNDA
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baelegalentityagainstitarnda-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeLegalEntityAgainstITARNDA'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeLegalEntityCode
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baelegalentitycode-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeLegalEntityCode'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeLegalEntityCodePri
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baelegalentitycodepri-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeLegalEntityCodePri'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeLegalEntityCodeSec
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baelegalentitycodesec-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeLegalEntityCodeSec'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeLegalEntityCountry
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baelegalentitycountry-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeLegalEntityCountry'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeLegalEntityCountryPri
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baelegalentitycountrypri-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeLegalEntityCountryPri'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeLegalEntityCountrySec
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baelegalentitycountrysec-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeLegalEntityCountrySec'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeLegalEntityEmployedBy
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baelegalentityemployedby-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeLegalEntityEmployedBy'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeLegalEntityName
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baelegalentityname-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeLegalEntityName'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeLegalEntityNamePri
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baelegalentitynamepri-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeLegalEntityNamePri'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeLevelOfECTraining
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baelevelofectraining-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeLevelOfECTraining'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeEnhancedTrainingLastCompleted
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baeenhancedtraininglastcompleted-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeEnhancedTrainingLastCompleted'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeAwarenessTrainingLastCompleted
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baeawarenesstraininglastcompleted-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeAwarenessTrainingLastCompleted'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeTrainingAwarenessCompleted
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baeTrainingAwarenessCompleted-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeTrainingAwarenessCompleted'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeTrainingEnhancedCompleted
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baetrainingenhancedcompleted-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeTrainingEnhancedCompleted'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeLicenceBusinessUnit
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baelicencebusinessunit-oid
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeLicenceBusinessUnit'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeLicenceExpirationDate
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baelicenceexpirationdate-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeLicenceExpirationDate'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeLicenceID
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baelicenceid-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeLicenceID'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeMailProxyAddress
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baemailproxyaddress-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeMailProxyAddress'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeManagerEmail
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baeManagerEmail-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeManagerEmail'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeManagerSFEmail
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baeManagerSFEmail-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeManagerSFEmail'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeManagerPri
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baemanagerpri-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeManagerPri'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeManagerSec
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baemanagersec-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeManagerSec'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeNDASigned
+#Syntax:SYN_BOOLEAN
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baendasigned-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.7
+  NAME 'baeNDASigned'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeNationalities
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baenationalities-oid
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeNationalities'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeNationalitiesPermanent
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baenationalitiespermanent-oid
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeNationalitiesPermanent'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baePermittedEndUse
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baepermittedenduse-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baePermittedEndUse'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baePermittedLegalEntities
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baepermittedlegalentities-oid
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baePermittedLegalEntities'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baePermittedLegalEntitiesRegNum
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baepermittedlegalentitiesregnum-oid
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baePermittedLegalEntitiesRegNum'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baePermittedNationalities
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baepermittednationalities-oid
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baePermittedNationalities'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baePermittedWorkingLocations
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baepermittedworkinglocations-oid
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baePermittedWorkingLocations'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baePhysicalDeliveryOfficeCode
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baephysicaldeliveryofficecode-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baePhysicalDeliveryOfficeCode'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeProhibitedCountriesOfWork
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baeprohibitedcountriesofwork-oid
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeProhibitedCountriesOfWork'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeProhibitedNationalities
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baeprohibitednationalities-oid
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeProhibitedNationalities'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeProjectsWorkingOn
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baeprojectsworkingon-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeProjectsWorkingOn'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeProjectsWorkingOnPri
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baeprojectsworkingonpri-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeProjectsWorkingOnPri'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeProjectsWorkingOnSec
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baeprojectsworkingonsec-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeProjectsWorkingOnSec'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeProxyAddresses
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baeproxyaddresses-oid
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeProxyAddresses'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeRegularEmployee
+#Syntax:SYN_BOOLEAN
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baeregularemployee-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.7
+  NAME 'baeRegularEmployee'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeRegularEmployeeEvaluated
+#Syntax:SYN_BOOLEAN
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baeregularemployeeevaluated-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.7
+  NAME 'baeRegularEmployeeEvaluated'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeResidencyCountry
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baeresidencycountry-oid
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeResidencyCountry'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeSFRoleTitle
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baesfroletitle-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeSFRoleTitle'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeSIPAddress
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baesipaddress-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeSIPAddress'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeSecClassificationPermitted
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baesecclassificationpermitted-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeSecClassificationPermitted'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeSecurityClassification
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baesecurityclassification-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeSecurityClassification'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+
+
+ 
+#NDS attribute:baeSecurityClearance
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baesecurityclearance-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeSecurityClearance'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeSecurityClearanceLimitations
+#Syntax:SYN_BOOLEAN
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baesecurityclearancelimitations-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.7
+  NAME 'baeSecurityClearanceLimitations'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeSecurityExpiry
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baesecurityexpiry-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeSecurityExpiry'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeSecurityVettingAgency
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baesecurityvettingagency-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeSecurityVettingAgency'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeStaffingNoAccess
+#Syntax:SYN_BOOLEAN
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baestaffingnoaccess-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.7
+  NAME 'baeStaffingNoAccess'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeStaffingNoControl
+#Syntax:SYN_BOOLEAN
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baestaffingnocontrol-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.7
+  NAME 'baeStaffingNoControl'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeStartDateSec
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baestartdatesec-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeStartDateSec'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeSupervisorGCI
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baesupervisorgci-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeSupervisorGCI'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeSupervisorVRSID
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baeSupervisorvrsid-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeSupervisorVRSID'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeTargetObject
+#Syntax:SYN_DIST_NAME
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baetargetobject-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.12
+  NAME 'baeTargetObject'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeTrainingLastCompleted
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baetraininglastcompleted-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeTrainingLastCompleted'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeUserDeletionDate
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baeuserdeletiondate-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeUserDeletionDate'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeUserMaximumDeletionDate
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baeusermaximumdeletiondate-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeUserMaximumDeletionDate'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeUserMinimumDeletionDate
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baeuserminimumdeletiondate-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeUserMinimumDeletionDate'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeUserPrincipalName
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baeuserprincipalname-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeUserPrincipalName'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeVRSID
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baevrsid-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeVRSID'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeWebAppEmployeeRole
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baewebappemployeerole-oid
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeWebAppEmployeeRole'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeSFEmailAddress
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baesfemailaddress-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeSFEmailAddress'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: ( 
+  baeisvalid-oid NAME 'baeIsValid' )
+
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: ( 
+  baeprojectsworkingonlevel2-oid NAME 'baeProjectsWorkingOnLevel2' )
+
+## additional attributes from older revisions:
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: ( baebuslevel2namenonsec-oid NAME 'baeBusLevel2NameNonSec' SYN
+ TAX 1.3.6.1.4.1.1466.115.121.1.15{64512} X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1' 
+ )
+
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: ( baebusinessareaidlevel2-oid NAME 'baeBusinessAreaIDLevel2' S
+ YNTAX 1.3.6.1.4.1.1466.115.121.1.15{64512} SINGLE-VALUE X-NDS_NOT_SCHED_SYNC
+ _IMMEDIATE '1' )
+
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: ( baebusinesscodelevel1-oid NAME 'baeBusinessCodeLevel1' SYNTA
+ X 1.3.6.1.4.1.1466.115.121.1.15{64512} SINGLE-VALUE X-NDS_NOT_SCHED_SYNC_IMM
+ EDIATE '1' )
+
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: ( baebusinesslevel1code-oid NAME 'baeBusinessLevel1Code' SYNTA
+ X 1.3.6.1.4.1.1466.115.121.1.15{64512} X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1' )
+
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: ( baebusinesssubarealevel3-oid NAME 'baeBusinessSubAreaLevel3'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15{64512} SINGLE-VALUE X-NDS_NOT_SCHED_SY
+ NC_IMMEDIATE '1' )
+
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: ( baecountryofworkcode-oid NAME 'baeCountryOfWorkCode' SYNTAX 
+ 1.3.6.1.4.1.1466.115.121.1.15{64512} SINGLE-VALUE X-NDS_NOT_SCHED_SYNC_IMMED
+ IATE '1' )
+
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: ( baedepartmentcode-oid NAME 'baeDepartmentCode' SYNTAX 1.3.6.
+ 1.4.1.1466.115.121.1.15{64512} SINGLE-VALUE X-NDS_NOT_SCHED_SYNC_IMMEDIATE '
+ 1' )
+
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: ( baedeptlevel1-oid NAME 'baeDeptLevel1' SYNTAX 1.3.6.1.4.1.14
+ 66.115.121.1.15{64512} SINGLE-VALUE X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1' )
+
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: ( baelegalentitysecondedto-oid NAME 'baeLegalEntitySecondedTo'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15{64512} SINGLE-VALUE X-NDS_NOT_SCHED_SY
+ NC_IMMEDIATE '1' )
+
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: ( baelicencedeletiondate-oid NAME 'baeLicenceDeletionDate' SYN
+ TAX 1.3.6.1.4.1.1466.115.121.1.24 SINGLE-VALUE X-NDS_NOT_SCHED_SYNC_IMMEDIAT
+ E '1' )
+
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: ( baepermittedlglentitiesregnum-oid NAME 'baePermittedLglEntit
+ iesRegNum' SYNTAX 1.3.6.1.4.1.1466.115.121.1.15{64512} SINGLE-VALUE X-NDS_NO
+ T_SCHED_SYNC_IMMEDIATE '1' )
+
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: ( baeregluaremployeeevaluated-oid NAME 'baeRegluarEmployeeEval
+ uated' SYNTAX 1.3.6.1.4.1.1466.115.121.1.7 SINGLE-VALUE X-NDS_NOT_SCHED_SYNC
+ _IMMEDIATE '1' )
+
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: ( baesecondmentdeptlevel4-oid NAME 'baeSecondmentDeptLevel4' S
+ YNTAX 1.3.6.1.4.1.1466.115.121.1.15{64512} SINGLE-VALUE X-NDS_NOT_SCHED_SYNC
+ _IMMEDIATE '1' )
+
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: ( baesecondmentenddate-oid NAME 'baeSecondmentEndDate' SYNTAX 
+ 1.3.6.1.4.1.1466.115.121.1.24 SINGLE-VALUE X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1
+ ' )
+
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: ( baesecondmentlength-oid NAME 'baeSecondmentLength' SYNTAX 1.
+ 3.6.1.4.1.1466.115.121.1.15{64512} SINGLE-VALUE X-NDS_NOT_SCHED_SYNC_IMMEDIA
+ TE '1' )
+
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: ( baesecondmentlevel1-oid NAME 'baeSecondmentLevel1' SYNTAX 1.
+ 3.6.1.4.1.1466.115.121.1.15{64512} SINGLE-VALUE X-NDS_NOT_SCHED_SYNC_IMMEDIA
+ TE '1' )
+
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: ( baesecondmentlevel2-oid NAME 'baeSecondmentLevel2' SYNTAX 1.
+ 3.6.1.4.1.1466.115.121.1.15{64512} SINGLE-VALUE X-NDS_NOT_SCHED_SYNC_IMMEDIA
+ TE '1' )
+
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: ( baesecondmentlevel3-oid NAME 'baeSecondmentLevel3' SYNTAX 1.
+ 3.6.1.4.1.1466.115.121.1.15{64512} SINGLE-VALUE X-NDS_NOT_SCHED_SYNC_IMMEDIA
+ TE '1' )
+
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: ( baesecondmentprojectsworkingon-oid NAME 'baeSecondmentProjec
+ tsWorkingOn' SYNTAX 1.3.6.1.4.1.1466.115.121.1.15{64512} SINGLE-VALUE X-NDS_
+ NOT_SCHED_SYNC_IMMEDIATE '1' )
+
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: ( baesecondmentstartdate-oid NAME 'baeSecondmentStartDate' SYN
+ TAX 1.3.6.1.4.1.1466.115.121.1.24 SINGLE-VALUE X-NDS_NOT_SCHED_SYNC_IMMEDIAT
+ E '1' )
+
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: ( baeidmactivity-oid NAME 'baeIDMActivity' SYNTAX 1.3.6.1.4.1.
+ 1466.115.121.1.15{64512} X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1' )
+
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: ( baeecasbu-oid NAME 'baeECASBU' SYNTAX 1.3.6.1.4.1.1466.115.1
+ 21.1.15{64512} SINGLE-VALUE X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1' )
+
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: ( baegladcompany-oid NAME 'baeGLADcompany' SYNTAX 1.3.6.1.4.1.
+ 1466.115.121.1.15{64512} SINGLE-VALUE X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1' )
+
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: ( baeseconded-oid NAME 'baeSeconded' SYNTAX 1.3.6.1.4.1.1466.1
+ 15.121.1.7 SINGLE-VALUE X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1' )
+
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baeoverridelegalentitycode-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeOverrideLegalEntityCode'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baeoverridelegalentityname-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeOverrideLegalEntityName'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baeoverridelegalentityhistory-oid
+  MULTI-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeOverrideLegalEntityHistory'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baelegalentitynamesec-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeLegalEntityNameSec'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: ( baeoverridelegalentitycode-oid SINGLE-VALUE SYNTAX 1.3.6.1
+ .4.1.1466.115.121.1.15 NAME 'baeOverrideLegalEntityCode' X-NDS_NOT_SCHED_SY
+ NC_IMMEDIATE '1')
+
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baelengthsec-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeLengthSec'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+
+#NDS attribute:baeOverrideLegalEntityHistory
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+delete: attributeTypes
+attributeTypes: (
+  baeoverridelegalentityhistory-oid
+  SINGLE-VALUE
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  NAME 'baeOverrideLegalEntityHistory'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+ )
+

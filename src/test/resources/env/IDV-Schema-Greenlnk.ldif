@@ -1,0 +1,280 @@
+version: 1
+
+#NDS attribute:baeGreenlnkDisplayName
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baegreenlnkdisplayname-oid
+  NAME 'baeGreenlnkDisplayName'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  SINGLE-VALUE
+  X-NDS_NAME 'baeGreenlnkDisplayName'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeGreenlnkProxyAddresses
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baegreenlnkproxyaddresses-oid
+  NAME 'baeGreenlnkProxyAddresses'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-NDS_NAME 'baeGreenlnkProxyAddresses'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeGreenlnkTelephoneNumber
+#Syntax:SYN_TEL_NUMBER
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baegreenlnktelephonenumber-oid
+  NAME 'baeGreenlnkTelephoneNumber'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.50
+  X-NDS_NAME 'baeGreenlnkTelephoneNumber'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeGreenlnkDomainName
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baegreenlnkdomainname-oid
+  NAME 'baeGreenlnkDomainName'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  SINGLE-VALUE
+  X-NDS_NAME 'baeGreenlnkDomainName'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeGreenlnkDirXML-ADContext
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baegreenlnkdirxml-adcontext-oid
+  NAME 'baeGreenlnkDirXML-ADContext'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  SINGLE-VALUE
+  X-NDS_NAME 'baeGreenlnkDirXML-ADContext'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeGreenlnkSAMAccountName
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baegreenlnksamaccountname-oid
+  NAME 'baeGreenlnkSAMAccountName'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  SINGLE-VALUE
+  X-NDS_NAME 'baeGreenlnkSAMAccountName'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeGreenlnkUserPrincipalName
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baegreenlnkuserprincipalname-oid
+  NAME 'baeGreenlnkUserPrincipalName'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  SINGLE-VALUE
+  X-NDS_NAME 'baeGreenlnkUserPrincipalName'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeGreenlnkManager
+#Syntax:SYN_DIST_NAME
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baegreenlnkmanager-oid
+  NAME 'baeGreenlnkManager'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.12
+  X-NDS_NAME 'baeGreenlnkManager'
+  )
+
+#NDS attribute:baeGreenlnkADcompany
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baegreenlnkadcompany-oid
+  NAME 'baeGreenlnkADcompany'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-NDS_NAME 'baeGreenlnkADcompany'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeGreenlnkOutofScope
+#Syntax:SYN_BOOLEAN
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baegreenlnkoutofscope-oid
+  NAME 'baeGreenlnkOutofScope'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.7
+  SINGLE-VALUE
+  X-NDS_NAME 'baeGreenlnkOutofScope'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  )
+
+#NDS attribute:baeGreenlnkBusinessIPPhoneNumber
+#Syntax:SYN_TEL_NUMBER
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baegreenlnkbusinessipphonenumber-oid
+  NAME 'baeGreenlnkBusinessIPPhoneNumber'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.50
+  X-NDS_NAME 'baeGreenlnkBusinessIPPhoneNumber'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeGreenlnkMobile
+#Syntax:SYN_TEL_NUMBER
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baegreenlnkmobile-oid
+  NAME 'baeGreenlnkMobile'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.50
+  X-NDS_NAME 'baeGreenlnkMobile'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeGreenlnkAccountExpirationDate
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baegreenlnkaccountexpirationdate-oid
+  NAME 'baeGreenlnkAccountExpirationDate'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  SINGLE-VALUE
+  X-NDS_NAME 'baeGreenlnkAccountExpirationDate'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeGreenlnkDirXML-ADAliasName
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baegreenlnkdirxml-adaliasname-oid
+  NAME 'baeGreenlnkDirXML-ADAliasName'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  SINGLE-VALUE
+  X-NDS_NAME 'baeGreenlnkDirXML-ADAliasName'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeGreenlnkMail
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baegreenlnkmail-oid
+  NAME 'baeGreenlnkMail'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  SINGLE-VALUE
+  X-NDS_NAME 'baeGreenlnkMail'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeGreenlnkLoginDisabled
+#Syntax:SYN_BOOLEAN
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baegreenlnklogindisabled-oid
+  NAME 'baeGreenlnkLoginDisabled'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.7
+  SINGLE-VALUE
+  X-NDS_NAME 'baeGreenlnkLoginDisabled'
+  )
+
+#NDS attribute:baeGreenlnkSIPAddress
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baegreenlnksipaddress-oid
+  NAME 'baeGreenlnkSIPAddress'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-NDS_NAME 'baeGreenlnkSIPAddress'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeGreenlnkWriteBackDisabled
+#Syntax:SYN_BOOLEAN
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baegreenlnkwritebackdisabled-oid
+  NAME 'baeGreenlnkWriteBackDisabled'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.7
+  SINGLE-VALUE
+  X-NDS_NAME 'baeGreenlnkWriteBackDisabled'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  )
+
+#NDS class:baeGreenlnk
+dn: cn=schema
+changetype: modify
+#If replacing the object class, uncomment the lines below.
+#delete: objectClasses
+#objectClasses: (
+#  baegreenlnk-oid
+#  NAME 'baeGreenlnk'
+# )
+#-
+add: objectClasses
+objectClasses: (
+  baegreenlnk-oid
+  NAME 'baeGreenlnk'
+  AUXILIARY
+  MAY ( baeGreenlnkAccountExpirationDate $ baeGreenlnkADcompany $ baeGreenlnkBusinessIPPhoneNumber $ 
+   baeGreenlnkDirXML-ADAliasName $ baeGreenlnkDirXML-ADContext $ baeGreenlnkDisplayName $ baeGreenlnkDomainName $ 
+   baeGreenlnkLoginDisabled $ baeGreenlnkMail $ baeGreenlnkManager $ baeGreenlnkMobile $ baeGreenlnkOutofScope $ 
+   baeGreenlnkProxyAddresses $ baeGreenlnkSAMAccountName $ baeGreenlnkSIPAddress $ baeGreenlnkTelephoneNumber $ 
+   baeGreenlnkUserPrincipalName $ baeGreenlnkWriteBackDisabled )
+  X-NDS_NOT_CONTAINER '1'
+  X-NDS_NAME 'baeGreenlnk'
+  )
+

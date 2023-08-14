@@ -1,0 +1,32 @@
+dn: o=BAES
+changetype: add
+objectClass: organization
+
+dn: ou=Users,o=BAES
+changetype: add
+objectClass: organizationalUnit
+
+dn: ou=Groups,o=BAES
+changetype: add
+objectClass: organizationalUnit
+
+dn: ou=ECOGroups,ou=Groups,o=BAES
+changetype: add
+objectClass: organizationalUnit
+
+dn: ou=ECOQueues,ou=Groups,o=BAES
+changetype: add
+objectClass: organizationalUnit
+
+dn: ou=Licences,o=BAES
+changetype: add
+objectClass: organizationalUnit
+
+dn: ou=Notifications,o=BAES
+changetype: add
+objectClass: organizationalUnit
+
+dn: ou=Lists,o=BAES
+changetype: add
+objectClass: organizationalUnit
+

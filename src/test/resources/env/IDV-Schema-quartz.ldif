@@ -1,0 +1,264 @@
+version: 1
+
+#NDS attribute:baeQuartzlnkSAMAccountName
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baequartzlnksamaccountname-oid
+  NAME 'baeQuartzlnkSAMAccountName'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-NDS_NAME 'baeQuartzlnkSAMAccountName'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeQuartzlnkMobile
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baequartzlnkmobile-oid
+  NAME 'baeQuartzlnkMobile'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-NDS_NAME 'baeQuartzlnkMobile'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeQuartzlnkSIPAddress
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baequartzlnksipaddress-oid
+  NAME 'baeQuartzlnkSIPAddress'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-NDS_NAME 'baeQuartzlnkSIPAddress'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeQuartzlnkOutofScope
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baequartzlnkoutofscope-oid
+  NAME 'baeQuartzlnkOutofScope'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-NDS_NAME 'baeQuartzlnkOutofScope'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeQuartzlnkDirXML-ADContext
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baequartzlnkdirxml-adcontext-oid
+  NAME 'baeQuartzlnkDirXML-ADContext'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-NDS_NAME 'baeQuartzlnkDirXML-ADContext'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeQuartzlnkADcompany
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baequartzlnkadcompany-oid
+  NAME 'baeQuartzlnkADcompany'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-NDS_NAME 'baeQuartzlnkADcompany'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeQuartzlnkUserPrincipalName
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baequartzlnkuserprincipalname-oid
+  NAME 'baeQuartzlnkUserPrincipalName'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-NDS_NAME 'baeQuartzlnkUserPrincipalName'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeQuartzlnkProxyAddresses
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baequartzlnkproxyaddresses-oid
+  NAME 'baeQuartzlnkProxyAddresses'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-NDS_NAME 'baeQuartzlnkProxyAddresses'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeQuartzlnkBusinessIPPhoneNum
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baequartzlnkbusinessipphonenum-oid
+  NAME 'baeQuartzlnkBusinessIPPhoneNum'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-NDS_NAME 'baeQuartzlnkBusinessIPPhoneNum'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeQuartzlnkDisplayName
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baequartzlnkdisplayname-oid
+  NAME 'baeQuartzlnkDisplayName'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-NDS_NAME 'baeQuartzlnkDisplayName'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeQuartzlnkTelephoneNumber
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baequartzlnktelephonenumber-oid
+  NAME 'baeQuartzlnkTelephoneNumber'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-NDS_NAME 'baeQuartzlnkTelephoneNumber'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeQuartzlnkDirXML-ADAliasName
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baequartzlnkdirxml-adaliasname-oid
+  NAME 'baeQuartzlnkDirXML-ADAliasName'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-NDS_NAME 'baeQuartzlnkDirXML-ADAliasName'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeQuartzlnkDomainName
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baequartzlnkdomainname-oid
+  NAME 'baeQuartzlnkDomainName'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-NDS_NAME 'baeQuartzlnkDomainName'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeQuartzlnkLoginDisabled
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baequartzlnklogindisabled-oid
+  NAME 'baeQuartzlnkLoginDisabled'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-NDS_NAME 'baeQuartzlnkLoginDisabled'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeQuartzlnkAccountExpirDate
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baequartzlnkaccountexpirdate-oid
+  NAME 'baeQuartzlnkAccountExpirDate'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-NDS_NAME 'baeQuartzlnkAccountExpirDate'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS attribute:baeQuartzlnkMail
+#Syntax:SYN_CI_STRING
+dn: cn=schema
+changetype: modify
+add: attributeTypes
+attributeTypes: (
+  baequartzlnkmail-oid
+  NAME 'baeQuartzlnkMail'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-NDS_NAME 'baeQuartzlnkMail'
+  X-NDS_NOT_SCHED_SYNC_IMMEDIATE '1'
+  X-NDS_STRINGED '1'
+  )
+
+#NDS class:baeQuartzlnk
+dn: cn=schema
+changetype: modify
+#If replacing the object class, uncomment the lines below.
+#delete: objectClasses
+#objectClasses: (
+#  baequartzlnk-oid
+#  NAME 'baeQuartzlnk'
+# )
+#-
+add: objectClasses
+objectClasses: (
+  baequartzlnk-oid
+  NAME 'baeQuartzlnk'
+  AUXILIARY
+  MAY ( 
+  baeQuartzlnkAccountExpirDate $
+  baeQuartzlnkADcompany $
+  baeQuartzlnkBusinessIPPhoneNum $
+  baeQuartzlnkDirXML-ADAliasName $
+  baeQuartzlnkDirXML-ADContext $
+  baeQuartzlnkDisplayName $
+  baeQuartzlnkDomainName $
+  baeQuartzlnkLoginDisabled $
+  baeQuartzlnkMail $
+  baeQuartzlnkMobile $
+  baeQuartzlnkOutofScope $
+  baeQuartzlnkProxyAddresses $
+  baeQuartzlnkSAMAccountName $
+  baeQuartzlnkSIPAddress $
+  baeQuartzlnkTelephoneNumber $
+  baeQuartzlnkUserPrincipalName
+  )
+  X-NDS_NOT_CONTAINER '1'
+  X-NDS_NAME 'baeQuartzlnk'
+  )
+
+

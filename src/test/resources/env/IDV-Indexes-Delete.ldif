@@ -1,0 +1,465 @@
+#Search and replace "cn=triviredir,ou=servers,o=services" with each server in the tree, importing this file so that all servers have all indexes.
+
+######First delete all the old indexes we had defined since we are re-creating them.....
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$managerWorkforceID$0$0$0$1$managerWorkforceID
+
+
+#One of the match attrs for baeLicences.
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeAuthRefNumber$0$0$0$1$baeAuthRefNumber
+
+#One of the match attrs for baeLicences.
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeLicenceBusinessUnit$0$0$0$1$baeLicenceBusinessUnit
+
+#Service Now, Greenlink and VRS may lookup users by this value.
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeGCINumber$0$0$0$1$baeGCINumber
+
+#Success Factors and VRS may lookup users by this value.
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeDOB$0$0$0$1$baeDOB
+
+#Success Factors may lookup users by this value.
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeSFEmailAddress$0$0$0$1$baeSFEmailAddress
+
+#VRS may lookup users by this value.
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeVRSID$0$0$0$1$baeVRSID
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeVRSID$0$0$0$1$baeRegularEmployee
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeVRSID$0$0$0$1$baeIsUserComplete
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeVRSID$0$0$0$1$baeUserDeletionDate
+
+
+##### Then delete all the current indexes we are adding in case we need to do it multiple times.
+#Indexes as defined in AS AttributeMapping v3.2h
+#Search and replace "cn=triviredir,ou=servers,o=services" with each server in the tree, importing this file so that all servers have all indexes.
+
+###Sample Value type index####
+#dn: cn=triviredir,ou=servers,o=services
+#changetype: modify
+#delete: indexDefinition
+#indexDefinition: 0$IndexName$0$0$0$1$AttributeName
+####Sample Substring type index:####
+#dn: cn=triviredir,ou=servers,o=services
+#changetype: modify
+#delete: indexDefinition
+#indexDefinition: 0$IndexName$0$2$0$1$AttributeName
+
+#Indexes specifically for users.
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeGCINumber_SS$0$2$0$1$baeGCINumber
+indexDefinition: 0$baeGCINumber$0$0$0$1$baeGCINumber
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeVRSID_SS$0$2$0$1$baeVRSID
+indexDefinition: 0$baeVRSID$0$0$0$1$baeVRSID
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeLegacyPayRollNumber_SS$0$2$0$1$baeLegacyPayRollNumber
+indexDefinition: 0$baeLegacyPayRollNumber$0$0$0$1$baeLegacyPayRollNumber
+
+#Surname also has an auto-type of value
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$Surname_SS$0$2$0$1$Surname
+#The Value type attr is auto-built by eDir.
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$Given Name_SS$0$2$0$1$Given Name
+#The Value type attr is auto-built by eDir.
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$preferredName_SS$0$2$0$1$preferredName
+indexDefinition: 0$preferredName$0$0$0$1$preferredName
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeDOB$0$0$0$1$baeDOB
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$Internet EMail Address_SS$0$2$0$1$Internet EMail Address
+indexDefinition: 0$Internet EMail Address$0$0$0$1$Internet EMail Address
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeSFEmailAddress_SS$0$2$0$1$baeSFEmailAddress
+indexDefinition: 0$baeSFEmailAddress$0$0$0$1$baeSFEmailAddress
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeLevelOfECTraining_SS$0$2$0$1$baeLevelOfECTraining
+indexDefinition: 0$baeLevelOfECTraining$0$0$0$1$baeLevelOfECTraining
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeFunctionName_SS$0$2$0$1$baeFunctionName
+indexDefinition: 0$baeFunctionName$0$0$0$1$baeFunctionName
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeLengthSec$0$0$0$1$baeLengthSec
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeStartDateSec$0$0$0$1$baeStartDateSec
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeEndDateSec$0$0$0$1$baeEndDateSec
+
+#CN and CN_SS are auto-added and cover indexing CN.
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeTrainingLastCompleted$0$0$0$1$baeTrainingLastCompleted
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeRegularEmployee$0$0$0$1$baeRegularEmployee
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeGreenlnkSAMAccountName_SS$0$2$0$1$baeGreenlnkSAMAccountName
+indexDefinition: 0$baeGreenlnkSAMAccountName$0$0$0$1$baeGreenlnkSAMAccountName
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeIsUserComplete$0$0$0$1$baeIsUserComplete
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeUserDeletionDate$0$0$0$1$baeUserDeletionDate
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeBusLevel1Name_SS$0$2$0$1$baeBusLevel1Name
+indexDefinition: 0$baeBusLevel1Name$0$0$0$1$baeBusLevel1Name
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeBusLevel2Name_SS$0$2$0$1$baeBusLevel2Name
+indexDefinition: 0$baeBusLevel2Name$0$0$0$1$baeBusLevel2Name
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeBusLevel3Name_SS$0$2$0$1$baeBusLevel3Name
+indexDefinition: 0$baeBusLevel3Name$0$0$0$1$baeBusLevel3Name
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeDeptName_SS$0$2$0$1$baeDeptName
+indexDefinition: 0$baeDeptName$0$0$0$1$baeDeptName
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeDeptLevel1Description_SS$0$2$0$1$baeDeptLevel1Description
+indexDefinition: 0$baeDeptLevel1Description$0$0$0$1$baeDeptLevel1Description
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeLegalEntityName_SS$0$2$0$1$baeLegalEntityName
+indexDefinition: 0$baeLegalEntityName$0$0$0$1$baeLegalEntityName
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$managerWorkforceID$0$0$0$1$managerWorkforceID
+
+
+
+
+
+#Indexes specifically for licenses
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeAuthRefNumber_SS$0$2$0$1$baeAuthRefNumber
+indexDefinition: 0$baeAuthRefNumber$0$0$0$1$baeAuthRefNumber
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeAuthType_SS$0$2$0$1$baeAuthType
+indexDefinition: 0$baeAuthType$0$0$0$1$baeAuthType
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeIssuingBody_SS$0$2$0$1$baeIssuingBody
+indexDefinition: 0$baeIssuingBody$0$0$0$1$baeIssuingBody
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeLicenceExpirationDate$0$0$0$1$baeLicenceExpirationDate
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baePermittedNationalities$0$0$0$1$baePermittedNationalities
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeProhibitedNationalities$0$0$0$1$baeProhibitedNationalities
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baePermittedLegalEntities_SS$0$2$0$1$baePermittedLegalEntities
+indexDefinition: 0$baePermittedLegalEntities$0$0$0$1$baePermittedLegalEntities
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baePermittedEndUse_SS$0$2$0$1$baePermittedEndUse
+indexDefinition: 0$baePermittedEndUse$0$0$0$1$baePermittedEndUse
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeSecurityClassification$0$2$0$1$baeSecurityClassification
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeJurisdiction$0$0$0$1$baeJurisdiction
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeClassification_SS$0$2$0$1$baeClassification
+indexDefinition: 0$baeClassification$0$0$0$1$baeClassification
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeHasOutstandingProvisos$0$0$0$1$baeHasOutstandingProvisos
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeApplicableAssets_SS$0$2$0$1$baeApplicableAssets
+indexDefinition: 0$baeApplicableAssets$0$0$0$1$baeApplicableAssets
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeIsValid$0$0$0$1$baeIsValid
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeProhibitedCountriesOfWork$0$0$0$1$baeProhibitedCountriesOfWork
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeLicenceBusinessUnit_SS$0$2$0$1$baeLicenceBusinessUnit
+indexDefinition: 0$baeLicenceBusinessUnit$0$0$0$1$baeLicenceBusinessUnit
+
+
+
+
+
+
+#### Indexes for training dates START
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeLevelOfECTraining_SS$0$2$0$1$baeLevelOfECTraining
+indexDefinition: 0$baeLevelOfECTraining$0$0$0$1$baeLevelOfECTraining
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeTrainingLastCompleted_SS$0$2$0$1$baeTrainingLastCompleted
+indexDefinition: 0$baeTrainingLastCompleted$0$0$0$1$baeTrainingLastCompleted
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeTrainingAwarenessCompleted_SS$0$2$0$1$baeTrainingAwarenessCompleted
+indexDefinition: 0$baeTrainingAwarenessCompleted$0$0$0$1$baeTrainingAwarenessCompleted
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeTrainingEnhancedCompleted_SS$0$2$0$1$baeTrainingEnhancedCompleted
+indexDefinition: 0$baeTrainingEnhancedCompleted$0$0$0$1$baeTrainingEnhancedCompleted
+#### Indexes for training dates END
+
+
+
+
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeGCINumber_SS$0$2$0$1$baeGCINumber
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeGCINumber$0$0$0$1$baeGCINumber
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeECASBU$0$0$0$1$baeECASBU
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$Group Membership$0$0$0$1$Group Membership
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeVRSID_SS$0$2$0$1$baeVRSID
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeVRSID$0$0$0$1$baeVRSID
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeSFEmailAddress_SS$0$2$0$1$baeSFEmailAddress
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeSFEmailAddress$0$0$0$1$baeSFEmailAddress
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeAuthRefNumber_SS$0$2$0$1$baeAuthRefNumber
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeAuthRefNumber$0$0$0$1$baeAuthRefNumber
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeLicenceBusinessUnit_SS$0$2$0$1$baeLicenceBusinessUnit
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeLicenceBusinessUnit$0$0$0$1$baeLicenceBusinessUnit
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeTrainingLastCompleted_SS$0$2$0$1$baeTrainingLastCompleted
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeTrainingLastCompleted$0$0$0$1$baeTrainingLastCompleted
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeLastWorkingDay$0$0$0$1$baeLastWorkingDay
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeSAPKSALastWorkingDay$0$0$0$1$baeSAPKSALastWorkingDay
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeSAPKSAClockNumber$3$0$0$1$baeSAPKSAClockNumber
+
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeCompanyStartDate$0$0$0$1$baeCompanyStartDate
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeCompanyStartDate_SS$0$2$0$1$baeCompanyStartDate
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeSAPKSACompanyStartDate$0$0$0$1$baeSAPKSACompanyStartDate
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeSAPKSACompanyStartDate_SS$0$2$0$1$baeSAPKSACompanyStartDate
+
+dn: cn=triviredir,ou=servers,o=services
+changetype: modify
+delete: indexDefinition
+indexDefinition: 0$baeFuseID$0$0$0$1$baeFuseID

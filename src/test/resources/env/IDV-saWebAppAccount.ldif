@@ -1,0 +1,88 @@
+dn: cn=saWebApp,o=services
+changetype: delete
+
+dn: cn=saWebApp,o=services
+changetype: add
+objectClass: Top
+objectClass: ndsLoginProperties
+objectClass: Person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: saWebApp
+sn: saWebApp
+description: Service account user for the WebApp.
+fullName: saWebApp
+userPassword: trivir
+
+dn: o=BAES
+changetype: modify
+add: ACL
+ACL: 1#subtree#cn=saWebApp,o=services#[Entry Rights]
+
+dn: o=BAES
+changetype: modify
+add: ACL
+ACL: 3#subtree#cn=saWebApp,o=services#[All Attributes Rights]
+
+dn: ou=Users,o=BAES
+changetype: modify
+add: ACL
+ACL: 1#subtree#cn=saWebApp,o=services#[Entry Rights]
+
+dn: ou=Users,o=BAES
+changetype: modify
+add: ACL
+ACL: 7#subtree#cn=saWebApp,o=services#[All Attributes Rights]
+
+dn: ou=Notifications,o=BAES
+changetype: modify
+add: ACL
+ACL: 7#subtree#cn=saWebApp,o=services#[Entry Rights]
+
+dn: ou=Notifications,o=BAES
+changetype: modify
+add: ACL
+ACL: 7#subtree#cn=saWebApp,o=services#[All Attributes Rights]
+
+#Part 2 of this user account.
+dn: cn=HRDS-Dynamic-Tables,cn=Driver Set,ou=IDM,o=services
+changetype: modify
+add: ACL
+ACL: 1#subtree#cn=saWebApp,o=services#[Entry Rights]
+
+dn: cn=HRDS-Dynamic-Tables,cn=Driver Set,ou=IDM,o=services
+changetype: modify
+add: ACL
+ACL: 3#subtree#cn=saWebApp,o=services#DirXML-Data
+
+#Part 3 of this user account.
+dn: cn=HRDS-Dynamic-Tables,cn=Driver Set,ou=IDM,o=services
+changetype: modify
+add: ACL
+ACL: 1#subtree#cn=saWebApp,o=services#[Entry Rights]
+
+dn: cn=HRDS-Dynamic-Tables,cn=Driver Set,ou=IDM,o=services
+changetype: modify
+add: ACL
+ACL: 3#subtree#cn=saWebApp,o=services#DirXML-Data
+
+#This was also added to IDV-saWebAppAccount.ldif, so this file can be deleted after this release.
+dn: ou=Lists,o=BAES
+changetype: modify
+add: ACL
+ACL: 15#subtree#cn=saWebApp,o=servIces#[Entry Rights]
+
+dn: ou=Lists,o=BAES
+changetype: modify
+add: ACL
+ACL: 7#subtree#cn=saWebApp,o=servIces#[All Attributes Rights]
+
+dn: ou=Licences,o=BAES
+changetype: modify
+add: ACL
+ACL: 3#subtree#cn=saWebApp,o=services#[All Attributes Rights]
+
+dn: ou=Licences,o=BAES
+changetype: modify
+add: ACL
+ACL: 5#subtree#cn=saWebApp,o=services#[Entry Rights]

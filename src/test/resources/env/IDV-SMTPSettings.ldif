@@ -1,0 +1,14 @@
+dn: cn=YOU HAVE TO DELETE THIS README ENTRY, AND ENSURE THE SETTINGS IN THIS FILE ARE CORRECT BEFORE IMPORTING!
+changetype: modify
+replace: nothing
+
+dn: cn=Default Notification Collection,cn=Security
+#changetype: modify
+#replace: notfSMTPEmailFrom
+#notfSMTPEmailFrom: AuthorisationServices-Do-Not-Reply@baesystems.com
+
+#Note: now using IdMUnit dedicated email server running on the VM.
+dn: cn=Default Notification Collection,cn=Security
+#changetype: modify
+#replace: notfSMTPEmailHost
+#notfSMTPEmailHost: 172.17.2.90
